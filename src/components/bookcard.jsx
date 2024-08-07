@@ -1,3 +1,4 @@
+import DeleteBook from "./deleteBook"
 
 
 function Bookcard(list){
@@ -8,7 +9,9 @@ function Bookcard(list){
                     <div className="BookName">{list.list.Titles}</div>
                     <div className="authorName">by {list.list.Author}</div>
                     <div className="Bookprice">{list.list.Price}</div>
+                    <DeleteBook/>
             </div>
+            
         </>
     )
 }

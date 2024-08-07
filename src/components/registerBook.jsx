@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { addBook } from './addbook';
 
-function RegisterBook({Book}){
+function RegisterBook(){
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [edition, setEdition] = useState('');
@@ -11,7 +11,7 @@ function RegisterBook({Book}){
 
     function handleSubmit(event){
         event.preventDefault()
-        console.log("I am hit",title, author)
+        console.log("I am hit",title, author,edition,format,currency,price)
     
         const bookData = {
             title,

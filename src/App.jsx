@@ -1,12 +1,7 @@
-import { useState } from 'react'
-import {addBook} from './components/addbook';
 import DisplayBooks from './components/displayBooks';
-import UpdateBook from './components/updateBook';
-import DeleteBook from './components/deleteBook';
-import Bookcard from './components/bookcard';
 import RegisterBook from './components/registerBook';
 import './App.css'
-// import RegisterBook from '../trying';
+
 
 function App() {
   let BookTable = [
@@ -46,17 +41,12 @@ function App() {
     CoverDesigner:"https://ohiostatepress.org/assets/covers/9780814255995.jpg",
     ReleaseDate:"October 30,2020",}]
   
-    localStorage.setItem("BookTable",JSON.stringify(BookTable))
+    // localStorage.setItem("BookTable",JSON.stringify(BookTable))
 
   return (
     <>
       <RegisterBook/>
       <DisplayBooks Book = {BookTable}/>
-      {/* <UpdateBook/>
-      <DeleteBook/> */}
-      {/* <Bookcard  Book = {BookTable[0]}/> */}
-      
-      {/* <RegisterBook/> */}
     </>
   )
 }
