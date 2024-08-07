@@ -1,10 +1,118 @@
-body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  background-color:#EDF3EF;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
 }
 
+.WholeCard{
+  /* align-content: center; */
+  padding: 3%;
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  border-radius: 3%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
+.BookCover{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80%;
+  border-radius: 2%;
+}
 
+.authorName{
+  font-weight:300 ;
+  font-size: large ;
+  color: grey;
+}
 
+.BookName{
+  font-weight:800 ;
+  font-size: 25px ;
+  margin-top: 3%;
+}
+
+.Bookprice{
+  font-weight:bold ;
+  font-size: large ;
+}
+
+/* BookRegister */
+.Library{
+  width: 650px;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  color: whitesmoke;
+  margin-top: 1%;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.input{
+  width: 110px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.158);
+  color: whitesmoke;
+}
+
+.input2{
+  width: 75%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.158);
+  margin-top: 2%;
+  color: whitesmoke;
+}
+
+.input3{
+  width: 65%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.158);
+  margin-top: 2%;
+  color: whitesmoke;
+}
+.bookName{
+  display: flex;
+  gap: 10px;
+}
+
+.currencyChoice{
+  width: 10%;
+  height: 25px;
+  background-color: transparent;
+  vertical-align: middle;
+  margin-top: 2.6%;
+  border: none;
+  color: rgba(255, 255, 255, 0.397);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.158);
+}
+
+option{
+  background-color: black;
+  color: rgba(255, 255, 255, 0.397);
+}
+
+button{
+  margin-top: 3%;
+  width: 76%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.libraryImage{
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 140%;
+  height: 100%;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 3%;
+}

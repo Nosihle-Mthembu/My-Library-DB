@@ -1,91 +1,12 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+
+*{
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.WholeCard{
-  /* align-content: center; */
-  padding: 3%;
-  width: 200px;
-  height: 350px;
-  background-color: white;
-  border-radius: 5%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.BookCover{
-  background-repeat: no-repeat;
-  background-size: cover;
+html body #root{
   width: 100%;
-  height: 80%;
-  border-radius: 2%;
-  
+  height: 100%;
 }
 
-.authorName{
-  font-weight:300 ;
-  font-size: large ;
-  color: grey;
-}
-
-.BookName{
-  font-weight:800 ;
-  font-size: 25px ;
-  margin-top: 3%;
-}
-
-.Bookprice{
-  font-weight:bold ;
-  font-size: large ;
-}
-
-/* BookRegister */
-.Library{
-  width: 650px;
-  height: 400px;
-  background-color: black;
-  display: flex;
-  color: whitesmoke;
-}
-
-.input{
-  width: 199px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.158);
-}
-
-.input2{
-  width: 75%;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.158);
-  margin-top: 2%;
-}
-
-.input3{
-  width: 65%;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.158);
-  margin-top: 2%;
-}
-.bookName{
-  display: flex;
-  gap: 10px;
-}
-
-.numberChoice{
-  width: 10%;
-  height: 25px;
-  background-color: transparent;
-  vertical-align: middle;
-  margin-top: 1.7%;
-  border: none;
-  color: rgba(255, 255, 255, 0.158);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.158);
-}
