@@ -42,11 +42,11 @@ function App() {
     ReleaseDate:"October 30,2020",}]
   
     // localStorage.setItem("BookTable",JSON.stringify(BookTable))
-
+    let MyBook = JSON.parse(localStorage.getItem("BookTable"))
   return (
     <>
       <RegisterBook/>
-      <DisplayBooks Book = {BookTable}/>
+      <DisplayBooks Book = {MyBook}/>
     </>
   )
 }

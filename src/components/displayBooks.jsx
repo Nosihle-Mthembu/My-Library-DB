@@ -1,17 +1,17 @@
 // This is the R in CRUD, this component READ the Data.
 import Bookcard from "./bookcard"
 
-function DisplayBooks(){
+function DisplayBooks({Book}){
 
-const book = localStorage.getItem("BookTable")
-const bookArray = JSON.parse(book)
+// console.log(Book, "tyeiyti")
 
     return(
         <>
-        <div style={{display:"flex", marginTop:10}}>
-            {bookArray.map((libry,index) => (
+        <div style={{display:"flex", marginTop:10, gap:5}}>
+            {Book.map((libry,index) => (
                 <Bookcard list = {libry} key = {index} />
             ))}
+            
         </div>
          
         

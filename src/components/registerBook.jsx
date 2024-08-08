@@ -2,29 +2,33 @@ import React, { useState } from 'react';
 import { addBook } from './addbook';
 
 function RegisterBook(){
-    const [title, setTitle] = useState('');
-    const [author, setAuthor] = useState('');
-    const [edition, setEdition] = useState('');
-    const [format, setFormat] = useState('');
+    const [Titles, setTitle] = useState('');
+    const [Author, setAuthor] = useState('');
+    const [Edition, setEdition] = useState('');
+    const [Format, setFormat] = useState('');
+    const [CoverDesigner, setCoverDesigner] = useState('');
     const [currency, setCurrency] = useState('');
-    const [price, setPrice] = useState('');
+    const [Price, setPrice] = useState('');
 
     function handleSubmit(event){
         event.preventDefault()
-        console.log("I am hit",title, author,edition,format,currency,price)
+        console.log("I am hit",Titles, Author,Edition,Format,currency,Price)
     
         const bookData = {
-            title,
-            author,
-            edition,
-            format,
+            Titles,
+            Author,
+            Edition,
+            Format,
+            CoverDesigner,
             currency,
-            price,
+            Price,
           };
+
+          console.log(bookData, "ehrfh3oig3oig")
 
           addBook(bookData)
       
-}
+    }
     
 
     return(
@@ -37,12 +41,12 @@ function RegisterBook(){
                         <input className="input"
                         type="text" 
                         placeholder="Title"
-                        value={title} 
+                        value={Titles} 
                         onChange={(event) => setTitle(event.target.value)}/>
                         <input className="input" 
                         type="text" 
                         placeholder="Author"
-                        value={author} 
+                        value={Author} 
                         onChange={(event) => setAuthor(event.target.value)}/>
                     </div>
 
@@ -50,13 +54,18 @@ function RegisterBook(){
                         <input className="input2"
                         type="text" 
                         placeholder="Edition"
-                        value={edition}
+                        value={Edition}
                         onChange={(event) => setEdition(event.target.value)}
                         />
                         <input className="input2" type="text" 
                         placeholder="Format"
-                        value={format}
+                        value={Format}
                         onChange={(event) => setFormat(event.target.value)}
+                        />
+                        <input className="input2" type="text" 
+                        placeholder="Book Cover"
+                        value={CoverDesigner}
+                        onChange={(event) => setCoverDesigner(event.target.value)}
                         />
                         <div>
                             <div>
@@ -71,7 +80,7 @@ function RegisterBook(){
                             <input className="input3" 
                             type="text" 
                             placeholder="R200-00"
-                            value={price}
+                            value={Price}
                             onChange={(event) => setPrice(event.target.value)}/>
                             </div>
                             <button onClick={handleSubmit}>Submit</button>

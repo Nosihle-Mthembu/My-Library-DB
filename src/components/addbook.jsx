@@ -3,7 +3,7 @@ export function addBook(Book){
    
   let MyBook = JSON.parse(localStorage.getItem("BookTable"))
   MyBook.push(Book)
-  localStorage.setItem("MyBook",JSON.stringify(MyBook))
+  localStorage.setItem("BookTable",JSON.stringify(MyBook))
 
 
 }

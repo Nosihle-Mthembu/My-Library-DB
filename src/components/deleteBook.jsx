@@ -2,10 +2,7 @@
 
 
 function DeleteBook({isbn}){
-
-    
-
-    // console.log(MyBook)
+  // console.log(MyBook)
      function handleDelete(){
        
         let MyBook = localStorage.getItem("BookTable")
@@ -18,7 +15,7 @@ function DeleteBook({isbn}){
   
     return(
         <>
-        <button onClick={handleDelete}>Delete</button>
+        <button onClick={handleDelete} style={{float:"right", width:100, marginTop:2}}>Delete</button>
         </>
     )
 }
