@@ -1,22 +1,22 @@
 // This is the D in CRUD, it is for Deleting the data
 
 
-function DeleteBook({isbn}){
-  // console.log(MyBook)
-     function handleDelete(){
-       
-        let MyBook = localStorage.getItem("BookTable")
-        const filterTable = MyBook.filter()
-        return(
-            localStorage.getItem("filteredTable")
-        )
+function DeleteBook({ISBN}){
+   
+    let myBooks = JSON.parse(localStorage.getItem("BookTable"))
 
-     }
-  
-    return(
-        <>
-        <button onClick={handleDelete} style={{float:"right", width:100, marginTop:2}}>Delete</button>
-        </>
-    )
-}
-export default DeleteBook
+         function handleDelete(){
+         const filteredBooks = myBooks.filter((book) =>book.ISBN !== ISBN)
+         myBooks = filteredBooks
+         localStorage.setItem("BookTable", JSON.stringify(myBooks))
+         window.location.reload(false)
+         }
+
+      
+        return(
+            <>
+            <button onClick={handleDelete} style={{float:"right", width:100}}>Delete</button>
+            </>
+        )
+    }
+    export default DeleteBook

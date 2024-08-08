@@ -1,8 +1,9 @@
 import DeleteBook from "./deleteBook"
+import UpdateBook from "./updateBook"
 
 
 function Bookcard(list){
-
+   
     return(
         <>
             <div className="WholeCard">
@@ -11,7 +12,11 @@ function Bookcard(list){
                    <div className="BookName">{list.list.Titles}</div>
                     <div className="authorName">by {list.list.Author}</div>
                     <div className="Bookprice">{list.list.Price}</div>
-                    <DeleteBook/> 
+                    <div style={{display:"flex", float:"right", gap:5}}>
+                        <DeleteBook ISBN = {list.list.ISBN}/>
+                        <UpdateBook/>
+                    </div>
+                    
                 </div>
                     
             </div>

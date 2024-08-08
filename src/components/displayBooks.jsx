@@ -7,7 +7,7 @@ function DisplayBooks({Book}){
 
     return(
         <>
-        <div style={{display:"flex", marginTop:10, gap:5}}>
+        <div style={{display:"grid",gridTemplateColumns:"auto auto auto",rowGap:30, marginTop:10}}>
             {Book.map((libry,index) => (
                 <Bookcard list = {libry} key = {index} />
             ))}

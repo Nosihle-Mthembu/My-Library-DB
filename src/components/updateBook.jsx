@@ -1,16 +1,17 @@
 // This is the U in CRUD, it is for Updating the data
 
 function UpdateBook(){
-
-    function add(){
+    let myBooks = JSON.parse(localStorage.getItem("BookTable"))
+    console.log(myBooks, "nanalala")
+    function addBook(){
         console.log("I am clicked")
     }
-    add()
+    addBook()
 
 
     return(
         <>
-        <button onClick={add}>Update</button>
+        <button style={{width:100}} onClick={addBook}>Update</button>
         </>
     )
 }

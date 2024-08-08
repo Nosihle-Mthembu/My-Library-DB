@@ -7,6 +7,7 @@ function RegisterBook(){
     const [Edition, setEdition] = useState('');
     const [Format, setFormat] = useState('');
     const [CoverDesigner, setCoverDesigner] = useState('');
+    const [ISBN, setISBN] = useState('');
     const [currency, setCurrency] = useState('');
     const [Price, setPrice] = useState('');
 
@@ -20,12 +21,13 @@ function RegisterBook(){
             Edition,
             Format,
             CoverDesigner,
+            ISBN,
             currency,
             Price,
           };
 
-          console.log(bookData, "ehrfh3oig3oig")
-
+        //   console.log(bookData, "ehrfh3oig3oig")
+          window.location.reload(true)
           addBook(bookData)
       
     }
@@ -66,6 +68,11 @@ function RegisterBook(){
                         placeholder="Book Cover"
                         value={CoverDesigner}
                         onChange={(event) => setCoverDesigner(event.target.value)}
+                        />
+                        <input className="input2" type="text" 
+                        placeholder="Book ISBN"
+                        value={ISBN}
+                        onChange={(event) => setISBN(event.target.value)}
                         />
                         <div>
                             <div>
